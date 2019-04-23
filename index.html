@@ -685,10 +685,6 @@
     @media screen and (max-height: 190px) and (orientation: landscape) {
       .main .btn-wrapper {
         top: auto;
-        bottom: 40px;
-        -webkit-transform: translate(0, -29px);
-        -ms-transform: translate(0, -29px);
-        transform: translate(0, -29px);
       }
     }
 
@@ -839,8 +835,8 @@ a_Short_numbers_stf.pdf">Условиями предоставления усл�
         footer['style']['bottom'] = "auto";
         footer['style']['top'] = (window['innerHeight'] - footer.offsetHeight) + 'px';
         if ((window['innerHeight'] > 212) && (window['innerHeight'] < 233)) {
-            buttonWrap['style']['marginTop'] = '-'+ (footer.offsetHeight-65) + 'px';
-        } else { buttonWrap['style']['marginTop'] = 0; }
+            buttonWrap['style']['bottom'] = footer.offsetHeight + 29 + 'px';
+        } else { buttonWrap['style']['bottom'] = ''; }
 
         document.body.style.height = window.innerHeight + 'px';
     }
