@@ -152,12 +152,16 @@
     /*OFFER*/
 
     .offer {
-      position: relative;
       display: table-row;
       width: 100%;
       font-size: 0;
       text-align: center;
       background-color: #383F51;
+    }
+
+    .offer .inner {
+      position: relative;
+      width: 100%;
     }
 
     .offer span {
@@ -724,8 +728,10 @@
 
 
 <body>
-<div class="offer blured">
-  <span>SERVICEPRICE. ACCOUNT. Доступ до EXPIRE-DATE.</span>
+<div class="offer">
+  <div class="inner blured">
+    <span>SERVICEPRICE. ACCOUNT. Доступ до EXPIRE-DATE.</span>
+  </div>
 </div>
 <div class="header">
   <div class="inner blured">
