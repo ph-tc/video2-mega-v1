@@ -839,8 +839,8 @@ a_Short_numbers_stf.pdf">Условиями предоставления усл�
         footer['style']['bottom'] = "auto";
         footer['style']['top'] = (window['innerHeight'] - footer.offsetHeight) + 'px';
         if ((window['innerHeight'] > 212) && (window['innerHeight'] < 233)) {
-            buttonWrap['style']['bottom'] = footer.offsetHeight + 29 + 'px';
-        } else { buttonWrap['style']['bottom'] = ''; }
+            buttonWrap['style']['marginTop'] = '-'+ (footer.offsetHeight-65) + 'px';
+        } else { buttonWrap['style']['marginTop'] = 0; }
 
         document.body.style.height = window.innerHeight + 'px';
     }
