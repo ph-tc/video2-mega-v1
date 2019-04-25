@@ -39,12 +39,6 @@
         <li>Интересные факты</li>
       </ul>
     </div>
-<!--    <div class="title">-->
-<!--      <div class="title-wrapper">-->
-<!--        <p class="heading">Название видео</p>-->
-<!--        <p class="description">И его краткое описание</p>-->
-<!--      </div>-->
-<!--    </div>-->
     <div class="video">
       <div class="inner">
         <div class="bg-preview"></div>
@@ -95,7 +89,7 @@
     <div class="heading">
       <p>Приятного просмотра</p>
     </div>
-    <a class="btn" id="btn" href="<TARIF_YES_URL">
+    <a class="btn" id="wapSubmitBtn" href="<TARIF_YES_URL>">
         <span>Смотреть</span>
     </a>
     <div class="cancel">
@@ -119,12 +113,8 @@ a_Short_numbers_stf.pdf">Условиями предоставления усл�
     //<![CDATA[
     function rsz() {
         var footer = document['getElementById']('footer');
-        var buttonWrap = document['getElementsByClassName']('btn-wrapper')[0];
         footer['style']['bottom'] = "auto";
         footer['style']['top'] = (window['innerHeight'] - footer.offsetHeight) + 'px';
-        // if ((window['innerHeight'] > 212) && (window['innerHeight'] < 233)) {
-        //     buttonWrap['style']['bottom'] = footer.offsetHeight + 29 + 'px';
-        // } else { buttonWrap['style']['bottom'] = ''; }
 
         document.body.style.height = window.innerHeight + 'px';
     }
